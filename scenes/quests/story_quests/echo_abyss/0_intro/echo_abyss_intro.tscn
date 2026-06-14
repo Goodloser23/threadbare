@@ -15,7 +15,8 @@
 [ext_resource type="Texture2D" uid="uid://dp70jmxsf86kh" path="res://scenes/quests/story_quests/echo_abyss/Assets/Art/pixel-heart-Empty.png" id="15_empty"]
 [ext_resource type="Script" uid="uid://cth45lafadnxn" path="res://scenes/quests/story_quests/echo_abyss/Scripts/echo_abyss_player.gd" id="16_echo_player"]
 [ext_resource type="Script" uid="uid://bdk4uhfdprt3t" path="res://scenes/quests/story_quests/echo_abyss/Scripts/echo_abyss_hud.gd" id="17_echo_hud"]
-[ext_resource type="PackedScene" path="res://scenes/quests/story_quests/echo_abyss/0_intro/intro_components/echo_abyss_essence_npc.tscn" id="18_essence_npc"]
+[ext_resource type="PackedScene" uid="uid://dwdrph2xc3yxu" path="res://scenes/quests/story_quests/echo_abyss/0_intro/intro_components/echo_abyss_essence_npc.tscn" id="18_essence_npc"]
+[ext_resource type="AudioStream" uid="uid://bitp32y2eoiw2" path="res://scenes/quests/story_quests/echo_abyss/Assets/music/temas/temas niveles/Next to You.mp3" id="18_gcyiv"]
 [ext_resource type="PackedScene" path="res://scenes/quests/story_quests/echo_abyss/0_intro/intro_components/echo_abyss_essence_exit.tscn" id="19_essence_exit"]
 
 [sub_resource type="Animation" id="Animation_ivd0k"]
@@ -184,3 +185,8 @@ texture = ExtResource("14_r66nt")
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=440090584]
 color = Color(0.55501574, 0.52019083, 0.4810639, 1)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1041521297]
+stream = ExtResource("18_gcyiv")
+volume_db = -12.177
+autoplay = true

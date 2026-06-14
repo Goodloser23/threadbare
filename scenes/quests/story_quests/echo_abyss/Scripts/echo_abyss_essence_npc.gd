@@ -37,8 +37,8 @@ func _on_interaction_started(player: Player, _from_right: bool) -> void:
 	if _can_award_essence(player):
 		player.call("add_essence", essence_reward)
 		_has_awarded_essence = true
-
-	_interact_area.end_interaction()
+		$"sfx barra".play()
+		_interact_area.end_interaction()
 
 
 func _can_award_essence(player: Player) -> bool:

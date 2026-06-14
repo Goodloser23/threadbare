@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://iu2q66clupc6" path="res://scenes/quests/story_quests/echo_abyss/Characters/player.tscn" id="7_75nl6"]
 [ext_resource type="Script" uid="uid://cth45lafadnxn" path="res://scenes/quests/story_quests/echo_abyss/Scripts/echo_abyss_player.gd" id="8_x73h5"]
 [ext_resource type="SpriteFrames" uid="uid://dtoylirwywk0j" path="res://scenes/game_elements/characters/components/sprite_frames/storyweaver_blue.tres" id="9_bgi13"]
-[ext_resource type="PackedScene" path="res://scenes/quests/story_quests/echo_abyss/2_flee/flee_components/echo_abyss_essence_npc.tscn" id="10_25fiu"]
+[ext_resource type="PackedScene" uid="uid://c66lgw361b5by" path="res://scenes/quests/story_quests/echo_abyss/2_flee/flee_components/echo_abyss_essence_npc.tscn" id="10_25fiu"]
 [ext_resource type="PackedScene" path="res://scenes/quests/story_quests/echo_abyss/0_intro/intro_components/echo_abyss_essence_exit.tscn" id="11_7kblv"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="12_2hkxu"]
 [ext_resource type="Resource" uid="uid://ddc0ocqov433x" path="res://scenes/quests/story_quests/echo_abyss/2_flee/flee_components/echo_abyss_flee.dialogue" id="13_xsh53"]
@@ -24,6 +24,7 @@
 [ext_resource type="Texture2D" uid="uid://ylj56k2u3u6u" path="res://assets/first_party/templates/guard_enemy/NO_EDIT_guard_enemy_walk.png" id="22_bcid4"]
 [ext_resource type="PackedScene" uid="uid://evb46lm6ssu2" path="res://scenes/game_elements/props/hookable_pin/hookable_pin.tscn" id="22_rl2sl"]
 [ext_resource type="PackedScene" uid="uid://dohb701lxbe5s" path="res://scenes/game_elements/props/hookable_needle/hookable_needle.tscn" id="23_3gwa0"]
+[ext_resource type="AudioStream" uid="uid://bxdybohgre4be" path="res://scenes/quests/story_quests/echo_abyss/Assets/music/temas/ambiental/theme.ogg" id="25_ene28"]
 
 [sub_resource type="Animation" id="Animation_ivd0k"]
 length = 0.001
@@ -469,3 +470,8 @@ position = Vector2(552, 264)
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=740142589]
 color = Color(0.55501574, 0.52019083, 0.4810639, 1)
+
+[node name="musica fondo 2" type="AudioStreamPlayer" parent="." unique_id=1752462563]
+stream = ExtResource("25_ene28")
+volume_db = -8.125
+autoplay = true
