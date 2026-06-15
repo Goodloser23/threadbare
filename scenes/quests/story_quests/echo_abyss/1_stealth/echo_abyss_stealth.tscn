@@ -411,7 +411,7 @@ curve = SubResource("Curve2D_3p7aa")
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=783616177]
 color = Color(0.55501574, 0.52019083, 0.4810639, 1)
 
-[node name="Musica fondo 2" type="AudioStreamPlayer" parent="." unique_id=197966900]
+[node name="Musica fondo 1" type="AudioStreamPlayer" parent="." unique_id=197966900]
 stream = ExtResource("23_g3acg")
 volume_db = -5.958
 autoplay = true

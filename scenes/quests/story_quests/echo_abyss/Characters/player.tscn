@@ -13,8 +13,10 @@
 [ext_resource type="PackedScene" uid="uid://cl06pid826dtg" path="res://scenes/game_elements/characters/player/components/player_repel.tscn" id="12_tnibl"]
 [ext_resource type="PackedScene" uid="uid://b3111eergq5yg" path="res://scenes/game_elements/characters/player/components/player_hook.tscn" id="13_ecbbk"]
 [ext_resource type="Script" uid="uid://bljkandp8ga11" path="res://scenes/quests/story_quests/echo_abyss/Scripts/echo_abyss_player_hit_reaction.gd" id="15_4nivu"]
+[ext_resource type="AudioStream" uid="uid://hjnjc2t8kmfv" path="res://scenes/quests/story_quests/echo_abyss/Assets/music/sounds/enemys/impactoespada.wav" id="16_8hfr8"]
 [ext_resource type="Script" uid="uid://bk52qjv58locq" path="res://scenes/game_logic/light2d_behaviors/artificial_light_behavior.gd" id="16_ecbbk"]
 [ext_resource type="Texture2D" uid="uid://b5ooaiyxdrp6a" path="res://scenes/game_elements/components/light_texture_256x256.tres" id="16_tnibl"]
+[ext_resource type="AudioStream" uid="uid://dqeyakdkogw62" path="res://scenes/quests/story_quests/echo_abyss/Assets/music/sounds/player/game_over.wav" id="17_5eoa8"]
 
 [sub_resource type="Resource" id="Resource_cvb4d"]
 script = ExtResource("3_cvb4d")
@@ -458,6 +460,13 @@ debug_color = Color(0.94902, 0.231373, 0, 0.419608)
 unique_name_in_owner = true
 root_node = NodePath("../../PlayerRepel")
 libraries/ = SubResource("AnimationLibrary_1n58k")
+
+[node name="sfx_daño" type="AudioStreamPlayer" parent="." unique_id=1216722746]
+stream = ExtResource("16_8hfr8")
+volume_db = -3.5
+
+[node name="sfx_gameover" type="AudioStreamPlayer" parent="." unique_id=1298931727]
+stream = ExtResource("17_5eoa8")
 
 [connection signal="running_changed" from="InputWalkBehavior" to="PlayerDustParticles" method="set_emitting"]
 [connection signal="running_changed" from="InputWalkBehavior" to="AnimationPlayer" method="_on_input_walk_behavior_running_changed"]

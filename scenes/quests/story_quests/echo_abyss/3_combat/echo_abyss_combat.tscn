@@ -329,5 +329,5 @@ position = Vector2(640, 33)
 
 [node name="musica fondo 3" type="AudioStreamPlayer" parent="." unique_id=1803406907]
 stream = ExtResource("22_2le0a")
-volume_db = -10.5
+volume_db = -18.5
 autoplay = true
